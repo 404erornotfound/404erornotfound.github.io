@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+div{
+    background-color:red;
+    height: 200px;
+    width: 200px;
+}
+div:hover{
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes color-change{
+    0%{
+        background-color: red;
+    }
+14%{
+    background-color: orange;
+}
+    28%{background-color: yellow;
+}
+42%{
+    background-color:green;
+}
+56%{
+    background-color: blue;
+}
+70%{
+    background-color: indigo;
+}
+84%{
+    background-color: violet;
+}
+100%{
+    background-color: violet;
+}
+}
+
+</style>
+<div id="square"></div>
+</html>
