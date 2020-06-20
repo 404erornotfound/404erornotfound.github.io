@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <style>
-h1{
-    color: rgb(39,122,6)
-    }
+#rainbow-rect {
+	background-color:red;
+	height: 20vh;
+	width: 2800px;
+	animation-name: color-change;
+	animation-duration: 2s;
+	    animation-iteration-count: infinite;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+}
+.title {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    font-size: 50px;
+    width: 100vw;
+    font-weight: bold;
+}
+.text{
+    position:fixed;
+    bottom: 0px;
+    font-size: 32px;
+    text-align: center;
+    color: brown;
+    height: 65vh;
+    width: 100vw;
+    text-decoration: underline;
+}
+.top3{
+    position:fixed;
+    bottom: 0px;
+    font-size: 22px;
+    text-align: left;
+    height: 45vh;
+    width: 90vw;
+    line-height: 8vh;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes color-change{
+	0%{
+		background-color: red;
+	}
+14%{
+	background-color: orange;
+}
+	28%{background-color: yellow;
+}
+42%{
+	background-color:green;
+}
+56%{
+	background-color: blue;
+}
+70%{
+	background-color: indigo;
+}
+84%{
+	background-color: violet;
+}
+}
 </style>
-<h1>Nolan's Coding emporium</h1>
+<!DOCTYPE html>
 
+<div id="rainbow-rect"></div>
+<div class= "title"> Happy Fathers Day!!</div>
+<div class= "text">Top 3 Dad Moments </div>
+<ul class = "top3">
+    <li>Knowing all 206 bones in the human skelloton but not being able to order a cotton candy icecream in a cup.</li>
+    <li>Being able to drive 14ish hours without falling asleep.</li>
+    <li> And finnaly saying the ever iconic "you got paid".   </li>
+</ul>
 </html>
